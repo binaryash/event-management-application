@@ -12,7 +12,7 @@ This is an Event Management Application built using the MERN stack (MongoDB, Exp
 The application is structured with a separate **frontend** and **backend** codebase, communicating via a RESTful API.
 
 
-![alt text](./docs/img/image.png)
+![event-management-app](./docs/img/image.png)
 
 
 ## Features
