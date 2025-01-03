@@ -1,0 +1,219 @@
+/* src/EventForm.css */
+
+/* General App Style */
+body {
+    background-color: #121212;  /* Slightly lighter dark gray background */
+    color: #fff;  /* White text */
+    font-family: 'Roboto', sans-serif;  /* Material UI default font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Event List */
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Event Card */
+.event-card {
+    background-color: #212121;  /* Dark gray for the card */
+    border: 1px solid #333;  /* Slightly lighter border */
+    border-radius: 12px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;  /* Fixed width for consistency */
+    height: 300px;  /* Fixed height to maintain uniformity */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);  /* Slight lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);  /* Darker shadow on hover */
+}
+
+.event-info {
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.event-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #B39DDB;  /* Light purple for titles */
+    margin-bottom: 8px;
+}
+
+.event-date {
+    color: #aaa;  /* Light gray for date */
+    font-size: 0.9em;
+}
+
+.event-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background-color: #B39DDB;  /* Light purple for delete */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+    min-width: 80px;  /* Ensures button size consistency */
+}
+
+.delete-btn:hover {
+    background-color: #9575CD;  /* Slightly darker purple on hover */
+}
+
+.rem-para {
+    background-color: #8E24AA;  /* Purple for reminder */
+    color: white;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    position: relative;
+    left: -5px;
+    bottom: 20px;
+}
+
+.event-today-message {
+    background-color: #FFEB3B;  /* Yellow for event today */
+    color: #333;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Form Section */
+input {
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    width: 100%;  /* Ensure full width */
+    background-color: #333;  /* Darker background for inputs */
+    color: #B39DDB;  /* Light purple text by default */
+}
+
+input:focus {
+    border-color: #B39DDB;  /* Light purple focus border */
+    outline: none;
+    color: #B39DDB;  /* Keep light purple text on focus */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 10px;
+    width: 100%;  /* Ensure full width on all devices */
+    max-width: 400px;  /* Limit max width for larger screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Subtle shadow to distinguish */
+}
+
+form label {
+    font-weight: 500;
+    color: #B39DDB;  /* Light purple text for labels */
+    margin-bottom: 5px;
+}
+
+form button {
+    background-color: #B39DDB;  /* Light purple for buttons */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    min-width: 120px;  /* Ensures button size consistency */
+}
+
+form button:hover {
+    background-color: #9575CD;  /* Darker purple on hover */
+    transform: translateY(-2px);
+}
+
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 10px;
+    width: 100%;  /* Ensure full width on all devices */
+    max-width: 400px;  /* Limit max width for larger screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Subtle shadow to distinguish */
+}
+
+form label {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+form button {
+    background-color: #B39DDB;  /* Light purple for buttons */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    min-width: 120px;  /* Ensures button size consistency */
+}
+
+form button:hover {
+    background-color: #9575CD;  /* Darker purple on hover */
+    transform: translateY(-2px);
+}
+
+/* Title of the event list */
+.event-list h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #B39DDB;  /* Light purple title color */
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #333;  /* Dark background for the title */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
